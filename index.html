@@ -1,247 +1,106 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Industrial Asset Recovery | Michigan</title>
-
-<meta name="description" content="Industrial Asset Recovery buys, sells, recovers and reclaims forklifts, scissor lifts, aerial lifts, industrial machinery, electrical equipment and wire throughout Michigan.">
-
+<meta name="description" content="Industrial Asset Recovery buys, sells, recycles, removes and refurbishes forklifts, electrical equipment, wire and cable, industrial equipment and lifts throughout Michigan.">
 <style>
-
-*{box-sizing:border-box}
-
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b1015;color:#fff}
-
-header{background:#080c10;border-bottom:1px solid #27313a;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px}
-
-.logo{display:flex;align-items:center;gap:14px}
-
-.globe{width:58px;height:58px;border:3px solid #b9c3cc;border-radius:50%;position:relative}
-
-.globe:before{content:"";position:absolute;left:11px;right:11px;top:15px;height:20px;border-top:2px solid #9cff00;border-bottom:2px solid #9cff00;border-radius:50%}
-
-.globe:after{content:"↗";position:absolute;color:#9cff00;font-size:25px;font-weight:bold;right:-7px;top:-8px}
-
-.logo h1{font-size:21px;margin:0;letter-spacing:1px}
-
-.logo span{color:#9cff00}
-
-.phone{color:#9cff00;font-weight:bold;font-size:18px}
-
-.hero{padding:85px 6%;background:linear-gradient(135deg,#111a22,#070a0d);text-align:center}
-
-.hero h2{font-size:48px;margin:0 0 18px}
-
-.hero h2 span{color:#9cff00}
-
-.hero p{font-size:20px;color:#c5cbd0;max-width:800px;margin:0 auto 30px;line-height:1.6}
-
-.button{display:inline-block;background:#9cff00;color:#081008;padding:15px 25px;border-radius:5px;text-decoration:none;font-weight:bold}
-
-section{padding:60px 6%;max-width:1200px;margin:auto}
-
-.title{text-align:center;font-size:32px;margin-bottom:40px}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-
-.card{background:#131a20;border:1px solid #2c3740;border-radius:10px;padding:28px;text-align:center}
-
-.card h3{color:#9cff00;margin-top:10px}
-
-.card p{color:#b9c1c7;line-height:1.5}
-
-.icon{font-size:42px}
-
-.about{background:#10161c;max-width:none}
-
-.about-inner{max-width:1100px;margin:auto}
-
-.about p{color:#c5cbd0;line-height:1.7;font-size:17px}
-
-.contact{text-align:center}
-
-.contact-box{background:#131a20;border:1px solid #2c3740;border-radius:10px;padding:35px}
-
-.contact a{color:#9cff00;font-size:22px;text-decoration:none;font-weight:bold}
-
-footer{text-align:center;padding:30px;color:#89939b;border-top:1px solid #27313a;font-size:14px}
-
-@media(max-width:650px){
-
-.hero h2{font-size:35px}
-
-header{flex-direction:column;text-align:center}
-
-.phone{font-size:16px}
-
-}
-
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#030706;color:#f4f7f7;font-family:Arial,Helvetica,sans-serif}
+:root{--g:#54ff19;--g2:#20d900;--black:#030706;--panel:#09100c;--muted:#c9d0cc}
+a{color:inherit}
+.top{background:#020403;border-bottom:2px solid var(--g);position:sticky;top:0;z-index:20}
+.nav{max-width:1200px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.globe{width:68px;height:68px;border:3px solid var(--g);border-radius:50%;position:relative;box-shadow:0 0 16px #1fff0033}
+.globe:before{content:"↗";position:absolute;font-size:52px;font-weight:900;color:var(--g);left:4px;top:0;transform:rotate(-28deg)}
+.brand strong{display:block;font-size:24px;letter-spacing:1px}.brand b{display:block;color:var(--g);font-size:25px;letter-spacing:1px}.tag{font-size:10px;letter-spacing:3px}
+.navlinks a{font-weight:800;text-decoration:none;margin-left:24px;font-size:14px}.navlinks a:hover{color:var(--g)}
+.phone{font-size:24px;font-weight:900;white-space:nowrap}.phone span{color:var(--g);font-size:11px;display:block;text-align:right;letter-spacing:1px}
+.hero{min-height:520px;background:linear-gradient(90deg,#020403e8 0%,#020403aa 44%,#02040322 100%),url("hero.jpg") center/cover;display:flex;align-items:center;border-bottom:1px solid #29362e}
+.hero-in{max-width:1200px;width:100%;margin:auto;padding:75px 35px}
+.hero h1{font-size:clamp(44px,6vw,78px);line-height:.96;margin:0 0 16px;text-transform:uppercase;text-shadow:3px 4px 0 #000}
+.hero h1 span{display:block;color:var(--g)}
+.hero h2{font-size:27px;font-style:italic;text-transform:uppercase;max-width:600px;margin:10px 0;color:#fff}
+.hero h2 span{color:var(--g)}
+.hero p{font-size:18px;font-weight:700;max-width:620px;color:#e3e8e5}
+.btn{display:inline-block;background:var(--g);color:#031000;text-decoration:none;font-weight:1000;padding:14px 24px;border-radius:5px;margin-top:10px;box-shadow:0 0 15px #3cff1540}
+.title{display:flex;align-items:center;gap:18px;justify-content:center;margin:0 0 30px;font-size:40px;text-transform:uppercase}
+.title:before,.title:after{content:"";height:3px;background:var(--g);flex:1;max-width:240px}
+.title span{color:var(--g)}
+.section{padding:42px 22px;background:#040806}.wrap{max-width:1200px;margin:auto}
+.buygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#07100b;border:1px solid #54ff19;border-radius:5px;overflow:hidden;box-shadow:0 0 18px #22ff0018}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card-body{padding:15px 16px 19px;min-height:130px}
+.icon{color:var(--g);font-size:29px;font-weight:900}.card h3{margin:2px 0 7px;font-size:19px;text-transform:uppercase}.card p{margin:0;color:#d3dad6;font-size:14px}
+.benefits{background:linear-gradient(90deg,#07120a,#020503,#07120a);border-top:1px solid #234b22;border-bottom:1px solid #234b22;padding:35px 22px}
+.benefitgrid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.benefit{text-align:center;padding:0 24px;border-right:1px solid #3b5540}.benefit:last-child{border:0}.benefit .big{color:var(--g);font-size:38px}.benefit h3{margin:5px 0;text-transform:uppercase;font-size:17px}.benefit p{margin:0;color:#ccd4cf;font-size:13px}
+.cta{background:linear-gradient(90deg,#020403db,#02040377),url("cta.jpg") center/cover;padding:55px 22px;border-top:2px solid var(--g);border-bottom:2px solid var(--g)}
+.ctain{max-width:1200px;margin:auto}.cta h2{font-size:42px;margin:0;text-transform:uppercase}.cta h3{color:var(--g);font-size:25px;margin:3px 0 12px}.bigphone{font-size:52px;font-weight:1000}
+footer{text-align:center;padding:22px;background:#020403;color:#b8c2bd;letter-spacing:2px;font-size:12px}footer strong{color:#fff}
+@media(max-width:1000px){.buygrid{grid-template-columns:repeat(2,1fr)}.benefitgrid{grid-template-columns:repeat(2,1fr);gap:25px}.benefit:nth-child(2){border:0}.phone{display:none}}
+@media(max-width:650px){.nav{padding:10px 14px}.navlinks{display:none}.brand strong,.brand b{font-size:18px}.globe{width:52px;height:52px}.hero-in{padding:55px 20px}.hero h1{font-size:47px}.hero h2{font-size:21px}.buygrid,.benefitgrid{grid-template-columns:1fr}.benefit{border:0}.title{font-size:29px}.title:before,.title:after{display:none}.bigphone{font-size:38px}.cta h2{font-size:31px}}
 </style>
-
 </head>
-
 <body>
-
-<header>
-
-<div class="logo">
-
-<div class="globe"></div>
-
-<div>
-
-<h1>INDUSTRIAL <span>ASSET</span> RECOVERY</h1>
-
-</div>
-
-</div>
-
-<div class="phone">313-467-5347</div>
-
+<header class="top">
+  <div class="nav">
+    <a class="brand" href="#">
+      <div class="globe"></div>
+      <div><strong>INDUSTRIAL</strong><b>ASSET RECOVERY</b><div class="tag">BUY • SELL • RECYCLE • REBUILD</div></div>
+    </a>
+    <div class="navlinks"><a href="#home">HOME</a><a href="#buy">ABOUT</a><a href="#buy">SERVICES</a><a href="#contact">CONTACT</a></div>
+    <a class="phone" href="tel:13134675347">313-467-5347<span>CALL TODAY</span></a>
+  </div>
 </header>
 
-<div class="hero">
-
-<h2>Your Assets. <span>Our Priority.</span></h2>
-
-<p>
-
-Professional industrial asset recovery serving Michigan.
-
-We buy, sell, recover, refurbish and reclaim commercial and industrial equipment.
-
-</p>
-
-<a class="button" href="tel:3134675347">CALL 313-467-5347</a>
-
-</div>
-
-<section>
-
-<h2 class="title">What We Handle</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<div class="icon">🏗️</div>
-
-<h3>Forklifts</h3>
-
-<p>Buy, sell, recover and refurbish forklifts and material-handling equipment.</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🏢</div>
-
-<h3>Scissor & Aerial Lifts</h3>
-
-<p>Industrial lifts and access equipment for commercial operations.</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">⚙️</div>
-
-<h3>Industrial Machinery</h3>
-
-<p>Industrial machinery, shop equipment and commercial assets.</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">⚡</div>
-
-<h3>Electrical Equipment</h3>
-
-<p>Electrical equipment, components and commercial electrical assets.</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🔌</div>
-
-<h3>Wire & Cable</h3>
-
-<p>Electrical wire, cable and related materials.</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">♻️</div>
-
-<h3>Asset Recovery</h3>
-
-<p>Equipment removal, recovery, refurbishment, resale and reclaim services.</p>
-
-</div>
-
-</div>
-
+<main id="home">
+<section class="hero">
+ <div class="hero-in">
+  <h1>INDUSTRIAL <span>ASSET RECOVERY</span></h1>
+  <h2>TURNING UNUSED ASSETS <span>INTO REAL VALUE</span></h2>
+  <p>We buy, sell, and recycle industrial equipment, helping businesses get the most out of their assets.</p>
+  <a class="btn" href="#contact">GET A QUOTE &nbsp; ›</a>
+ </div>
 </section>
 
-<section class="about">
-
-<div class="about-inner">
-
-<h2 class="title">Industrial Asset Recovery</h2>
-
-<p>
-
-We help businesses turn unused, surplus and unwanted industrial assets into value.
-
-Our services include equipment purchasing, resale, recovery, removal and refurbishment.
-
-</p>
-
-<p>
-
-We work with forklifts, lifts, industrial machinery, electrical equipment,
-
-wire and cable, tools and other commercial assets.
-
-</p>
-
-</div>
-
+<section class="section" id="buy">
+ <div class="wrap">
+  <h2 class="title">WHAT WE <span>BUY</span></h2>
+  <div class="buygrid">
+   <article class="card"><img src="forklifts.jpg" alt="Forklifts"><div class="card-body"><div class="icon">▰</div><h3>Forklifts</h3><p>All makes, models & conditions. Running or not.</p></div></article>
+   <article class="card"><img src="electrical.jpg" alt="Electrical equipment"><div class="card-body"><div class="icon">ϟ</div><h3>Electrical Equipment</h3><p>Panels, transformers, generators, breakers & more.</p></div></article>
+   <article class="card"><img src="wire.jpg" alt="Wire and cable"><div class="card-body"><div class="icon">◎</div><h3>Wire & Cable</h3><p>Copper, aluminum, scrap wire and all types of cable.</p></div></article>
+   <article class="card"><img src="industrial.jpg" alt="Industrial equipment"><div class="card-body"><div class="icon">⚙</div><h3>Industrial Equipment</h3><p>Machinery, tools, production equipment & more.</p></div></article>
+   <article class="card"><img src="removal.jpg" alt="Equipment removal"><div class="card-body"><div class="icon">♻</div><h3>Equipment Removal</h3><p>We handle the heavy lifting. Safe, fast & professional.</p></div></article>
+   <article class="card"><img src="refurbish.jpg" alt="Refurbishing and resale"><div class="card-body"><div class="icon">⟳</div><h3>Refurbishing & Resale</h3><p>We give equipment a second life and maximize its value.</p></div></article>
+   <article class="card"><img src="lifts.jpg" alt="Scissor and aerial lifts"><div class="card-body"><div class="icon">⇅</div><h3>Scissor & Aerial Lifts</h3><p>All types, sizes & brands. Buy, sell, and trade.</p></div></article>
+   <article class="card"><img src="cable.jpg" alt="Industrial materials"><div class="card-body"><div class="icon">⚒</div><h3>And More</h3><p>One call. Multiple solutions. Your industrial asset partner.</p></div></article>
+  </div>
+ </div>
 </section>
 
-<section class="contact">
-
-<h2 class="title">Get an Equipment Evaluation</h2>
-
-<div class="contact-box">
-
-<p>Have equipment or industrial assets you want to sell?</p>
-
-<a href="tel:3134675347">313-467-5347</a>
-
-<p>iar.detroit@gmail.com</p>
-
-<p>Serving All of Michigan</p>
-
-</div>
-
+<section class="benefits">
+ <div class="benefitgrid">
+  <div class="benefit"><div class="big">🤝</div><h3>Fair Pricing</h3><p>Get the best value for your assets.</p></div>
+  <div class="benefit"><div class="big">♻</div><h3>Easy Process</h3><p>Fast, simple & hassle-free.</p></div>
+  <div class="benefit"><div class="big">✓</div><h3>Reliable Service</h3><p>Honest, professional & dependable.</p></div>
+  <div class="benefit"><div class="big">◒</div><h3>Environmentally Friendly</h3><p>We recycle and reduce waste.</p></div>
+ </div>
 </section>
 
-<footer>
+<section class="cta" id="contact">
+ <div class="ctain">
+  <h2>Have Equipment to Sell?</h2>
+  <h3>GET A FAST, NO-OBLIGATION EVALUATION.</h3>
+  <div class="bigphone">☎ 313-467-5347</div>
+  <a class="btn" href="tel:13134675347">CONTACT US &nbsp; ›</a>
+ </div>
+</section>
+</main>
 
-© 2026 Industrial Asset Recovery • Michigan
-
-</footer>
-
+<footer><strong>INDUSTRIAL ASSET RECOVERY</strong> &nbsp; | &nbsp; BUY • SELL • RECYCLE • REBUILD</footer>
 </body>
-
 </html>
